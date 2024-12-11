@@ -1,4 +1,3 @@
-// import { Moon } from "lucide-react";
 
 import { ModeToggle } from "@/features/dark-mode/components/mode-toggle";
 import { cn } from "@/lib/utils";
