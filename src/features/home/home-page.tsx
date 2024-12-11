@@ -7,32 +7,32 @@ export const HomePage = () => {
 	return (
 		<>
 			{/* Hero Section */}
-			<section className="container min-h-[calc(100vh-60px)] mx-auto pt-8 place-content-center">
-				<div className="flex gap-24 justify-center align-center pb-36">
+			<section className="px-6 lg:px-0 container min-h-[calc(100vh-60px)] mx-auto pt-8 place-content-center">
+				<div className="flex flex-col-reverse sm:flex-row gap-24 justify-center align-center pb-36">
 					{/* Photo */}
-					<BlurFade delay={0.25} inView>
+					<BlurFade delay={0.25} inView className="self-center">
 						<ShineBorder 
-							className="relative w-full p-0"
+							className="p-0"
 							color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
 							borderWidth={2}>
 							<img
 								src="./src/assets/hehe.jpg"
 								alt="some random picture"
-								className="rounded h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-cover"
+								className="rounded-lg w-full h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-fit"
 							/>
 						</ShineBorder>
 					</BlurFade>
 
 					{/* Header */}
 					<div className="flex flex-col justify-center gap-6">
-						<BlurFade delay={0.25 * 2} inView>
+						<BlurFade delay={0.25} inView>
 							<span className="text-7xl font-bold text-foreground -m-1">
 								Eriz Sartiga
 							</span>
 						</BlurFade>
 
 						{/* Subtitle */}
-						<BlurFade delay={0.25 * 2} inView>
+						<BlurFade delay={0.25} inView>
 							<h2 className="text-3xl font-semibold text-primary">
 								Full Stack Software Developer
 							</h2>
@@ -42,7 +42,7 @@ export const HomePage = () => {
 						</BlurFade>
 
 						{/* Socials */}
-						<BlurFade delay={0.25 * 2} inView>
+						<BlurFade delay={0.25} inView>
 							<div className="flex gap-4 pt-8">
 								<a
 									href="https://linkedin.com/in/eriz-sartiga"
@@ -73,9 +73,13 @@ export const HomePage = () => {
 						</BlurFade>
 					</div>
 				</div>
-				<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
+				<div className=" hidden sm:block absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
 					<ChevronDown className="size-8 text-foreground hover:text-primary transition-colors duration-300" />
 				</div>
+			</section>
+
+			<section className="px-6 ">
+
 			</section>
 		</>
 	);
