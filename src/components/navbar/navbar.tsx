@@ -9,7 +9,7 @@ export const Navbar = () => {
 			className={cn(
                 // "backdrop-blur-sm"
             )}>
-			<div className="container mx-auto px-4 py-4 flex justify-between items-center ">
+			<div className="container mx-auto py-4 flex justify-between items-center">
 				{/* logo and name placement */}
 				<h1 className="text-xl font-bold font-mono">
 					ewiz.dev
