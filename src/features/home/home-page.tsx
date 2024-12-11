@@ -79,9 +79,9 @@ export const HomePage = () => {
 
 			{/* Career Section */}
 			<section id="career" className="bg-background border-y-2 border-white">
-				<div className="container mx-auto px-6 lg:px-0 py-16">
+				<div className="container mx-auto px-6 lg:px-0 py-24">
 					{/* Header */}
-					<div className="w-full h-16 flex justify-center items-center pb-16">
+					<div className="w-full h-16 flex justify-center items-center pb-24">
 						<h1 className="text-3xl font-bold">Career 💼</h1>
 					</div>
 
@@ -101,8 +101,9 @@ export const HomePage = () => {
 								</h4>
 								<ul className="list-inside list-disc pt-2 ">
 									<li className="text-pretty">
-										Translated Figma into visually appealing, pixel-perfect web
-										pages using React, Tailwind CSS, and Typescript.
+										Translated Figma designs into visually appealing,
+										pixel-perfect web pages using React, Tailwind CSS, and
+										Typescript.
 									</li>
 									<li className="text-pretty">
 										Developed a text editor with SlateJS allowing students to
@@ -129,15 +130,15 @@ export const HomePage = () => {
 			{/* Skills Section */}
 			<section
 				id="skills"
-				className="px-6 lg:px-0 container mx-auto py-20 place-content-center"
+				className="px-6 lg:px-0 container mx-auto py-24 place-content-center"
 			>
 				{/* Header */}
-				<div className="w-full h-16 flex justify-center items-center pb-16">
+				<div className="w-full h-16 flex justify-center items-center pb-24">
 					<h1 className="text-3xl font-bold">Skills 🛠️</h1>
 				</div>
 
-				<div className="h-auto flex justify-center gap-6 ">
-					<BlurFade delay={0.25} inView>
+				<BlurFade delay={0.25} inView>
+					<div className="h-auto flex justify-center gap-6 ">
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
 							<h3 className="text-xl font-semibold ">
 								The 'Full-Stack' Stack 🥞
@@ -156,8 +157,7 @@ export const HomePage = () => {
 								))}
 							</div>
 						</div>
-					</BlurFade>
-					<BlurFade delay={0.25} inView>
+
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
 							<h3 className="text-xl font-semibold ">Tech I've Explored 🔎</h3>
 							<h4 className="text-lg font-medium pt-4">
@@ -177,7 +177,85 @@ export const HomePage = () => {
 								))}
 							</div>
 						</div>
-					</BlurFade>
+					</div>
+				</BlurFade>
+			</section>
+
+			{/* Projects Section */}
+			<section
+				id="skills"
+				className="px-6 lg:px-0 container mx-auto py-24 place-content-center"
+			>
+				{/* Header */}
+				<div className="w-full h-16 flex justify-center items-center pb-24">
+					<h1 className="text-3xl font-bold">Projects 👨‍💻</h1>
+				</div>
+
+				<div className="h-auto grid grid-cols-2 gap-6">
+					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
+						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+							Project 1
+						</h3>
+						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+							Project Description
+						</h4>
+						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
+							<a href="#" className="text-primary">
+								Website
+							</a>
+							<a href="#" className="text-primary">
+								Source
+							</a>
+						</div>
+					</div>
+					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
+						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+							Project 1
+						</h3>
+						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+							Project Description
+						</h4>
+						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
+							<a href="#" className="text-primary">
+								Website
+							</a>
+							<a href="#" className="text-primary">
+								Source
+							</a>
+						</div>
+					</div>
+					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
+						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+							Project 1
+						</h3>
+						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+							Project Description
+						</h4>
+						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
+							<a href="#" className="text-primary">
+								Website
+							</a>
+							<a href="#" className="text-primary">
+								Source
+							</a>
+						</div>
+					</div>
+					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
+						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+							Project 1
+						</h3>
+						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+							Project Description
+						</h4>
+						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
+							<a href="#" className="text-primary">
+								Website
+							</a>
+							<a href="#" className="text-primary">
+								Source
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
