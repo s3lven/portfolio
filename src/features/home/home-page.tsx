@@ -1,4 +1,6 @@
+import { Github, Linkedin } from "@/assets/social-icons";
 import BlurFade from "@/components/ui/blur-fade";
+import ShineBorder from "@/components/ui/shine-border";
 import { ChevronDown, FileUser } from "lucide-react";
 
 export const HomePage = () => {
@@ -9,11 +11,16 @@ export const HomePage = () => {
 				<div className="flex gap-24 justify-center align-center pb-36">
 					{/* Photo */}
 					<BlurFade delay={0.25} inView>
-						<img
-							src="./src/assets/hehe.jpg"
-							alt="some random picture"
-							className="rounded h-[28.5rem] md:h-[30rem] shadow-inner object-cover"
-						/>
+						<ShineBorder 
+							className="relative w-full p-0"
+							color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+							borderWidth={2}>
+							<img
+								src="./src/assets/hehe.jpg"
+								alt="some random picture"
+								className="rounded h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-cover"
+							/>
+						</ShineBorder>
 					</BlurFade>
 
 					{/* Header */}
@@ -29,7 +36,9 @@ export const HomePage = () => {
 							<h2 className="text-3xl font-semibold text-primary">
 								Full Stack Software Developer
 							</h2>
-							<h2 className="text-xl">Bay Area, California, US</h2>
+							<h2 className="text-xl font-semibold">
+								Bay Area, California, US
+							</h2>
 						</BlurFade>
 
 						{/* Socials */}
@@ -40,14 +49,14 @@ export const HomePage = () => {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<img src="./src/assets/linkedin.svg" />
+									<Linkedin className="text-sky-500 hover:text-sky-500/80" />
 								</a>
 								<a
 									href="https://github.com/s3lven"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<img src="./src/assets/github.svg" />
+									<Github className="text-slate-900 dark:text-white hover:text-slate-900/70 dark:hover:text-slate-300" />
 								</a>
 								<a
 									href="/website-resume.pdf"
@@ -55,16 +64,17 @@ export const HomePage = () => {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<FileUser size={36} color="#fb7185" />
+									<FileUser
+										size={36}
+										className=" text-rose-400 hover:text-rose-400/80"
+									/>
 								</a>
-
-								
 							</div>
 						</BlurFade>
 					</div>
 				</div>
 				<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
-					<ChevronDown className="size-8 text-foreground hover:text-primary transition-colors" />
+					<ChevronDown className="size-8 text-foreground hover:text-primary transition-colors duration-300" />
 				</div>
 			</section>
 		</>

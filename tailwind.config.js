@@ -51,15 +51,31 @@ export default {
     				'5': 'hsl(var(--chart-5))'
     			}
     		},
-			container: {
-				screens: {
-				  sm: '480px',
-				  md: '576px',
-				  lg: '768px',
-				  xl: '960px',
-				  '2xl': '1152px',
-				},
-			  },
+    		container: {
+    			screens: {
+    				sm: '480px',
+    				md: '576px',
+    				lg: '768px',
+    				xl: '960px',
+    				'2xl': '1152px'
+    			}
+    		},
+    		animation: {
+    			shine: 'shine var(--duration) infinite linear'
+    		},
+    		keyframes: {
+    			shine: {
+    				'0%': {
+    					'background-position': '0% 0%'
+    				},
+    				'50%': {
+    					'background-position': '100% 100%'
+    				},
+    				to: {
+    					'background-position': '0% 0%'
+    				}
+    			}
+    		}
     	}
     },
 	plugins: [require("tailwindcss-animate")],
