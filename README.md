@@ -19,7 +19,7 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 ## Roadmap 🗺️
 
 - [x] Initialize project structure and to-do list
-- [ ] Create navbar, footer, and hero
+- [x] Create navbar, footer, and hero
 - [ ] Create career, skills, and projects layout
 - [ ] Put content in layout
 - [x] Add color theming and dark mode 
