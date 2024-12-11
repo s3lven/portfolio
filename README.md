@@ -18,11 +18,13 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 
 ## Roadmap 🗺️
 
-- [ ] Initialize project structure and to-do list
-- [ ] Create layout and implement early responsiveness
-- [ ] Implement content (skills, projects, passions)
-- [ ] Add color theming and dark mode
+- [x] Initialize project structure and to-do list
+- [ ] Create navbar, footer, and hero
+- [ ] Create career, skills, and projects layout
+- [ ] Put content in layout
+- [x] Add color theming and dark mode 
 - [ ] Add animations and the little guy
+- [ ] Add smooth scroll
 - [ ] Write tests with Jest/RTL
 - [ ] Deploy onto Vercel/GHPages
 
