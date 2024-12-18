@@ -1,23 +1,20 @@
 import { Github, Linkedin } from "@/assets/social-icons";
 import { FileUser } from "lucide-react";
+import Link from "./link";
 
 export const Socials = () => {
 	return (
 		<>
-			<a
+			<Link
 				href="https://linkedin.com/in/eriz-sartiga"
-				target="_blank"
-				rel="noopener noreferrer"
 			>
 				<Linkedin className="text-sky-500 hover:text-sky-500/80" />
-			</a>
-			<a
+			</Link>
+			<Link
 				href="https://github.com/s3lven"
-				target="_blank"
-				rel="noopener noreferrer"
 			>
 				<Github className="text-slate-900 dark:text-white hover:text-slate-900/70 dark:hover:text-slate-300" />
-			</a>
+			</Link>
 			<a
 				href="website-resume.pdf"
 				download="Eriz Sartiga - Resume.pdf"

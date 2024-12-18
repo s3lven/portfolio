@@ -37,8 +37,8 @@ export const HomePage = () => {
 						>
 							<img
 								src={import.meta.env.BASE_URL + "ewiz.webp"}
-								alt="some random picture"
-								className="rounded-lg w-full h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-fit"
+								alt="eriz's profile picture"
+								className="rounded-lg w-full h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-cover"
 							/>
 						</ShineBorder>
 					</BlurFade>
@@ -89,7 +89,7 @@ export const HomePage = () => {
 
 					{/* Mergen */}
 					<BlurFade delay={0.25} inView>
-						<div className="flex gap-6 w-full">
+						<div className="flex md:flex-row flex-col gap-6 w-full">
 							<div className="">
 								<MergenIcon className={"size-40 bg-[#f222dd] rounded p-2"} />
 							</div>
@@ -101,7 +101,7 @@ export const HomePage = () => {
 								<h4 className="my-1 font-semibold">
 									Jul 2024 - <span>Now</span>
 								</h4>
-								<ul className="list-inside list-disc pt-2 ">
+								<ul className="list-inside list-disc pt-2 space-y-4">
 									<li className="text-pretty">
 										Translated Figma designs into visually appealing,
 										pixel-perfect web pages using React, Tailwind CSS, and
@@ -140,7 +140,7 @@ export const HomePage = () => {
 				</div>
 
 				<BlurFade delay={0.25} inView>
-					<div className="h-auto flex justify-center gap-6 ">
+					<div className="h-auto flex justify-center gap-6 flex-col md:flex-row">
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
 							<h3 className="text-lg font-semibold ">The 'Full-Stack' 🥞</h3>
 							<h4 className="text-lg font-medium pt-4">
@@ -192,7 +192,7 @@ export const HomePage = () => {
 						<h1 className="text-3xl font-bold">Projects 🚀</h1>
 					</div>
 
-					<div className="h-auto grid grid-cols-2 gap-6">
+					<div className="h-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 						{projects.map((project) => (
 							<ProjectCard project={project} />
 						))}

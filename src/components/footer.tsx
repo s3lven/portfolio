@@ -1,4 +1,4 @@
-import Socials from "../socials";
+import Socials from "./socials";
 
 export const Footer = () => {
 	return (
@@ -7,9 +7,9 @@ export const Footer = () => {
 				<div className="flex gap-4 justify-center">
 					<Socials />
 				</div>
-                <div className="mt-2 flex justify-center items-center font-bold text-lg">
-                    Created by Eriz Sartiga
-                </div>
+				<div className="mt-2 flex justify-center items-center font-bold text-lg">
+					Created by Eriz Sartiga
+				</div>
 			</div>
 		</footer>
 	);

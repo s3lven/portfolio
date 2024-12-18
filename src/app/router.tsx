@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router";
-import { MainLayout } from "@/components/layout/main-layout";
+import { MainLayout } from "@/components/main-layout";
 import { HomePage } from "@/features/home/home-page";
 
 export const AppRoutes = () => {

@@ -10,7 +10,7 @@ export const projects: Project[] = [
 	{
 		name: "Portfolio Website",
 		description: "My website showcasing my career, skills, and projects",
-		website: "",
+		website: "#",
 		source: "https://github.com/s3lven/portfolio",
 		image: "projects/portfolio.webp",
 	},
