@@ -7,7 +7,7 @@ type AppProviderProps = {
 
 export const AppProvider = ({ children }: AppProviderProps) => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/portfolio/">
 			<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 				{children}
 			</ThemeProvider>
