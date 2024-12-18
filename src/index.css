@@ -49,9 +49,11 @@
 }
 @layer base {
 	* {
-		@apply border-border;
+		@apply border-border scrollbar-thin scrollbar-webkit;
 	}
 	body {
 		@apply bg-background text-foreground transition-colors duration-300;
 	}
 }
+
+

@@ -6,7 +6,7 @@ import { Footer } from "../footer/footer";
 
 export const MainLayout = () => {
 	return (
-		<div className="relative min-h-screen h-full">
+		<div className="relative min-h-screen h-full no-scrollbar ">
 			<DotPattern
 				className={cn(
 					// "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",

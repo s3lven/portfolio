@@ -2,7 +2,7 @@ import Socials from "../socials";
 
 export const Footer = () => {
 	return (
-		<div className="border-t-2 border-white place-content-center bg-background py-9 flex flex-col mt-12">
+		<footer className="border-t-2 border-white place-content-center bg-background py-9 flex flex-col mt-[200px]">
 			<div className="place-content-center">
 				<div className="flex gap-4 justify-center">
 					<Socials />
@@ -11,6 +11,6 @@ export const Footer = () => {
                     Created by Eriz Sartiga
                 </div>
 			</div>
-		</div>
+		</footer>
 	);
 };

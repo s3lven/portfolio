@@ -24,7 +24,7 @@ export const HomePage = () => {
 	const techExplored = ["python", "mongodb", "java", "c", "c++", "docker"];
 
 	return (
-		<div className="w-full">
+		<main className="w-full scrollbar-thin scrollbar-webkit">
 			{/* Hero Section */}
 			<section className="px-6 lg:px-0 container min-h-[calc(100vh-60px)] mx-auto pt-8 place-content-center relative">
 				<div className="flex flex-col-reverse sm:flex-row gap-24 justify-center align-center pb-36">
@@ -142,9 +142,7 @@ export const HomePage = () => {
 				<BlurFade delay={0.25} inView>
 					<div className="h-auto flex justify-center gap-6 ">
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
-							<h3 className="text-lg font-semibold ">
-								The 'Full-Stack' 🥞
-							</h3>
+							<h3 className="text-lg font-semibold ">The 'Full-Stack' 🥞</h3>
 							<h4 className="text-lg font-medium pt-4">
 								My go-to for whenver an idea comes to mind, often used for quick
 								prototyping!
@@ -186,21 +184,21 @@ export const HomePage = () => {
 			{/* Projects Section */}
 			<section
 				id="skills"
-				className="px-6 lg:px-0 container mx-auto py-24 place-content-center"
+				className="px-6 lg:px-0 place-content-center bg-background border-y-2 border-white"
 			>
-				{/* Header */}
-				<div className="w-full h-16 flex justify-center items-center pb-24">
-					<h1 className="text-3xl font-bold">Projects 👨‍💻</h1>
-				</div>
+				<div className="container mx-auto px-6 lg:px-0 py-24">
+					{/* Header */}
+					<div className="w-full h-16 flex justify-center items-center pb-24">
+						<h1 className="text-3xl font-bold">Projects 🚀</h1>
+					</div>
 
-				<div className="h-auto grid grid-cols-2 gap-6">
-					{
-						projects.map((project) => (
+					<div className="h-auto grid grid-cols-2 gap-6">
+						{projects.map((project) => (
 							<ProjectCard project={project} />
-						))
-					}
+						))}
+					</div>
 				</div>
 			</section>
-		</div>
+		</main>
 	);
 };
