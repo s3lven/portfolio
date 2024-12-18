@@ -1,7 +1,9 @@
 import { MergenIcon } from "@/assets/mergen-icon";
+import ProjectCard from "@/components/project-card";
 import Socials from "@/components/socials";
 import BlurFade from "@/components/ui/blur-fade";
 import ShineBorder from "@/components/ui/shine-border";
+import { projects } from "@/types";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-scroll";
 
@@ -34,7 +36,7 @@ export const HomePage = () => {
 							borderWidth={2}
 						>
 							<img
-								src="./src/assets/hehe.jpg"
+								src="./src/assets/ewiz.webp"
 								alt="some random picture"
 								className="rounded-lg w-full h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-fit"
 							/>
@@ -140,8 +142,8 @@ export const HomePage = () => {
 				<BlurFade delay={0.25} inView>
 					<div className="h-auto flex justify-center gap-6 ">
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
-							<h3 className="text-xl font-semibold ">
-								The 'Full-Stack' Stack 🥞
+							<h3 className="text-lg font-semibold ">
+								The 'Full-Stack' 🥞
 							</h3>
 							<h4 className="text-lg font-medium pt-4">
 								My go-to for whenver an idea comes to mind, often used for quick
@@ -159,8 +161,8 @@ export const HomePage = () => {
 						</div>
 
 						<div className="w-full p-6 rounded-md backdrop-blur-sm border-primary border">
-							<h3 className="text-xl font-semibold ">Tech I've Explored 🔎</h3>
-							<h4 className="text-lg font-medium pt-4">
+							<h3 className="text-lg font-semibold ">Tech I've Explored 🔎</h3>
+							<h4 className=" text-lg font-medium pt-4">
 								"Jack of All Trades, Master of One" is how the saying goes.{" "}
 								<br />
 								<br />
@@ -192,70 +194,11 @@ export const HomePage = () => {
 				</div>
 
 				<div className="h-auto grid grid-cols-2 gap-6">
-					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
-						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-							Project 1
-						</h3>
-						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
-							Project Description
-						</h4>
-						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
-							<a href="#" className="text-primary">
-								Website
-							</a>
-							<a href="#" className="text-primary">
-								Source
-							</a>
-						</div>
-					</div>
-					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
-						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-							Project 1
-						</h3>
-						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
-							Project Description
-						</h4>
-						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
-							<a href="#" className="text-primary">
-								Website
-							</a>
-							<a href="#" className="text-primary">
-								Source
-							</a>
-						</div>
-					</div>
-					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
-						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-							Project 1
-						</h3>
-						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
-							Project Description
-						</h4>
-						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
-							<a href="#" className="text-primary">
-								Website
-							</a>
-							<a href="#" className="text-primary">
-								Source
-							</a>
-						</div>
-					</div>
-					<div className="w-full p-6 rounded-md border-primary border flex flex-col gap-4 justify-end aspect-video overflow-hidden group transform transition duration-300 hover:scale-105">
-						<h3 className="text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-							Project 1
-						</h3>
-						<h4 className="text-lg font-medium opacity-0 group-hover:opacity-100 transition duration-300">
-							Project Description
-						</h4>
-						<div className="flex gap-4 opacity-0 group-hover:opacity-100 transition duration-300">
-							<a href="#" className="text-primary">
-								Website
-							</a>
-							<a href="#" className="text-primary">
-								Source
-							</a>
-						</div>
-					</div>
+					{
+						projects.map((project) => (
+							<ProjectCard project={project} />
+						))
+					}
 				</div>
 			</section>
 		</div>

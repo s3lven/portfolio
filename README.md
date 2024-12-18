@@ -1,6 +1,6 @@
 # Eriz's Portfolio Website 🌟
 
-Welcome to my portfolio website! This site is still in progress. This projects showcases my skills, projects, passions, and professional experience as a software/web developer.
+Welcome to my portfolio website! This site is still in progress. This projects showcases my skills, projects, passions, and professional experience as a web developer.
 
 ## Features 🚀
 
@@ -8,13 +8,12 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 - **Dark Mode**: A sleek dark theme for visual appeal and so my eyes don't burn.
 - **Project Showcase**: Highlights my featured projects with live demos and Github links
 - **About Me**: A section to introduce myself, my skills, and my professional journey.
-- **Contact Form**: Allow visitors to get in touch via email.
 - **Animations**: I had to code the little guy in.
 
 ## Technologies Used 🛠️
 
 - **Frontend**: React (Vite), TailwindCSS
-- **Testing**: React Testing Library, Jest
+- **Testing**: React Testing Library, Jest, Vitest
 
 ## Roadmap 🗺️
 
@@ -22,10 +21,12 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 - [x] Create navbar, footer, and hero
 - [x] Create career, skills, and projects layout
 - [ ] Put content in layout
-- [x] Add color theming and dark mode 
+- [x] Add color theming and dark mode
+- [ ] Add tooltips to Technology
+- [ ] Add primary color gradient to dots
 - [ ] Add animations and the little guy
 - [ ] Add smooth scroll
-- [ ] Write tests with Jest/RTL
+- [ ] More sections for my passions and hobbies (because it needs more personality)
 - [ ] Deploy onto Vercel/GHPages
 
 ## How to Run Locally 🖥️ (for future me?)
