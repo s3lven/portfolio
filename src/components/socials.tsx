@@ -19,7 +19,7 @@ export const Socials = () => {
 				<Github className="text-slate-900 dark:text-white hover:text-slate-900/70 dark:hover:text-slate-300" />
 			</a>
 			<a
-				href="/website-resume.pdf"
+				href="website-resume.pdf"
 				download="Eriz Sartiga - Resume.pdf"
 				target="_blank"
 				rel="noopener noreferrer"

@@ -36,7 +36,7 @@ export const HomePage = () => {
 							borderWidth={2}
 						>
 							<img
-								src="./src/assets/ewiz.webp"
+								src={import.meta.env.BASE_URL + "ewiz.webp"}
 								alt="some random picture"
 								className="rounded-lg w-full h-[28.5rem] md:h-[30rem] dark:shadow-inner shadow-lg object-fit"
 							/>
@@ -151,7 +151,7 @@ export const HomePage = () => {
 								{techStack.map((tech) => (
 									<img
 										key={tech}
-										src={`src/assets/tech-icons/${tech}.svg`}
+										src={import.meta.env.BASE_URL + `tech-icons/${tech}.svg`}
 										className="size-10"
 									/>
 								))}
@@ -171,7 +171,7 @@ export const HomePage = () => {
 								{techExplored.map((tech) => (
 									<img
 										key={tech}
-										src={`src/assets/tech-icons/${tech}.svg`}
+										src={import.meta.env.BASE_URL + `tech-icons/${tech}.svg`}
 										className="size-10"
 									/>
 								))}

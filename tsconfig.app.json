@@ -27,5 +27,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/assets/social-icons.tsxsrc/assets/mergen-icon.tsx.tsx"]
 }

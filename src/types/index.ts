@@ -12,14 +12,14 @@ export const projects: Project[] = [
 		description: "My website showcasing my career, skills, and projects",
 		website: "",
 		source: "https://github.com/s3lven/portfolio",
-		image: "./src/assets/portfolio.png",
+		image: "projects/portfolio.webp",
 	},
 	{
 		name: "Taikai",
 		description: "A tournament bracket manager for Kendo!",
 		website: "",
 		source: "https://github.com/s3lven/kendo-brackets",
-		image: "./src/assets/taikai.webp",
+		image: "projects/taikai.webp",
 	},
 ];
 
