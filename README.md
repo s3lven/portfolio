@@ -8,12 +8,10 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 - **Dark Mode**: A sleek dark theme for visual appeal and so my eyes don't burn.
 - **Project Showcase**: Highlights my featured projects with live demos and Github links
 - **About Me**: A section to introduce myself, my skills, and my professional journey.
-- **Animations**: I had to code the little guy in.
 
 ## Technologies Used 🛠️
 
 - **Frontend**: React (Vite), TailwindCSS
-- **Testing**: React Testing Library, Jest, Vitest
 
 ## Roadmap 🗺️
 
@@ -24,10 +22,10 @@ Welcome to my portfolio website! This site is still in progress. This projects s
 - [x] Add color theming and dark mode
 - [ ] Add tooltips to Technology
 - [ ] Add primary color gradient to dots
-- [ ] Add animations and the little guy
+- [ ] Add animations and a little guy
 - [ ] Add smooth scroll
 - [ ] More sections for my passions and hobbies (because it needs more personality)
-- [ ] Deploy onto Vercel/GHPages
+- [x] Deploy onto Vercel/GHPages
 
 ## How to Run Locally 🖥️ (for future me?)
 

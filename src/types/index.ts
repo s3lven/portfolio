@@ -17,8 +17,8 @@ export const projects: Project[] = [
 	{
 		name: "Taikai",
 		description: "A tournament bracket manager for Kendo!",
-		website: "",
-		source: "https://github.com/s3lven/kendo-brackets",
+		website: "https://taikai.app",
+		source: "https://github.com/s3lven/taikai",
 		image: "projects/taikai.webp",
 	},
 ];
