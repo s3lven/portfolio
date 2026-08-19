@@ -125,7 +125,7 @@ export const HomePage = () => {
                     <li className="text-pretty">
                       Investigated and documented functional and technical
                       defects, collaborating with developers to isolate issues,
-                      communicate 􀏐indings, and validate 􀏐ixes.
+                      communicate fndings, and validate fixes.
                     </li>
                     <li className="text-pretty">
                       Assessed and recommended alternative implementations when
@@ -135,7 +135,7 @@ export const HomePage = () => {
                     </li>
                     <li className="text-pretty">
                       Participated in an Agile development environment through
-                      daily Scrum meetings, user story re􀏐inement, sprint
+                      daily Scrum meetings, user story refinement, sprint
                       reviews, and stakeholder demonstrations, collaborating
                       with various teams throughout the software development
                       lifecycle.
